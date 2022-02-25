@@ -62,7 +62,7 @@ module.exports = {
                 res.status(404).json({
                     message: "No user with that ID"
                 }) :
-                User.deleteMany({
+                Thoughts.deleteMany({
                     _id: {
                         $in: user.thoughts
                     }

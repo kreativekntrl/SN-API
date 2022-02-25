@@ -56,7 +56,7 @@ module.exports = {
                 res.status(404).json({
                     message: 'No thought with that ID'
                 }) :
-                Student.deleteMany({
+                Thoughts.deleteMany({
                     _id: {
                         $in: thought.reactions
                     }
