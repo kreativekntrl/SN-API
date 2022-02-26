@@ -8,12 +8,12 @@ const {
 } = require('../../controllers/userController.js');
 
 // /api/user
-router.route('/')
+router.route('/'
 .get(getUsers)
 .get(getOneUser)
 .post(createUser)
 .put(updateUser)
-.delete(deleteUser);
+.delete(deleteUser));
 
 // /api/users/:userId/friends/:friendId
 // POST to add a new friend to a user's friend list
